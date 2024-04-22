@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages, Extension
-from sqlUts import version
 
 classifiers = [
   'Development Status :: 5 - Production/Stable',
@@ -11,7 +10,7 @@ classifiers = [
  
 setup(
   name='sqlUts',
-  version=version,
+  version='1.0.2',
   description='An orm package',
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   long_description_content_type='text/markdown',

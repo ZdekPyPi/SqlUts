@@ -6,8 +6,6 @@ import sqlalchemy as sa
 from sqlalchemy_utils import database_exists, create_database
 from datetime import datetime as dt
 
-version = '1.0.0'
-
 class DbSqlA:
     base        = declarative_base()
     def __init__(self,ConnectionString,fast_executemany=True,pool_pre_ping=False):
