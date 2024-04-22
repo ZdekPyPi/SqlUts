@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages, Extension
- 
+from jsonUts import version
+
 classifiers = [
   'Development Status :: 5 - Production/Stable',
   'Intended Audience :: Education',
@@ -9,8 +10,8 @@ classifiers = [
 ]
  
 setup(
-  name='SqlUts',
-  version='0.1.3',
+  name='sqlUts',
+  version=version,
   description='An orm package',
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   long_description_content_type='text/markdown',
@@ -19,7 +20,7 @@ setup(
   author_email='melque_ex@yahoo.com.br',
   license='MIT', 
   classifiers=classifiers,
-  keywords='SqlUts', 
+  keywords='sqlUts', 
   packages=find_packages(),
   install_requires=['SQLAlchemy<2.0.0','SQLAlchemy-Utils'] 
   # install_requires=['SQLAlchemy==1.4.0','SQLAlchemy-Utils==0.38.2'] 
