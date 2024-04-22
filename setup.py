@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages, Extension
-from jsonUts import version
+from sqlUts import version
 
 classifiers = [
   'Development Status :: 5 - Production/Stable',
