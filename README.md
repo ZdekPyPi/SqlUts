@@ -6,6 +6,9 @@
 pip install dateUts
 ```
 
+## GitHub
+https://github.com/ZdekPyPi/SqlUts
+
 ### Usage
 #
 #### sqlToDate

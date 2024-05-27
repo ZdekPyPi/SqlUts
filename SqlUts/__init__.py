@@ -8,8 +8,14 @@ from datetime import datetime as dt
 
 class DbSqlA:
     base        = declarative_base()
-    def __init__(self,ConnectionString,fast_executemany=True,pool_pre_ping=False):
-        self.engine                 = sa.create_engine(ConnectionString) if not fast_executemany else sa.create_engine(ConnectionString,fast_executemany=True, pool_pre_ping=pool_pre_ping)
+    #fast_executemany=True,
+    #pool_size=10,
+    #max_overflow=2,
+    #pool_recycle=300,
+    #pool_pre_ping=True,
+    #pool_use_lifo=True
+    def __init__(self,ConnectionString,**kwargs):
+        self.engine                 = sa.create_engine(ConnectionString, **kwargs)
         self.session                = scoped_session(sessionmaker(autocommit=False,autoflush=False,bind=self.engine))
         self.base.query             = self.session.query_property()
         self.orm_session            = orm.scoped_session(orm.sessionmaker())(bind=self.engine)
