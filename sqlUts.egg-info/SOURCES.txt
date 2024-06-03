@@ -3,9 +3,9 @@ LICENCE.txt
 MANIFEST.in
 README.md
 commands.txt
+run.py
 setup.py
 sqlUts/__init__.py
-sqlUts/version.py
 sqlUts.egg-info/PKG-INFO
 sqlUts.egg-info/SOURCES.txt
 sqlUts.egg-info/dependency_links.txt

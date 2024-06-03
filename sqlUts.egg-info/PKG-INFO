@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: sqlUts
-Version: 1.0.3
+Version: 1.0.4
 Summary: An orm package
 Home-page: 
 Author: Melque Lima
@@ -24,6 +24,9 @@ Requires-Dist: SQLAlchemy-Utils
 ```sh
 pip install dateUts
 ```
+
+## GitHub
+https://github.com/ZdekPyPi/SqlUts
 
 ### Usage
 #
